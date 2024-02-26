@@ -39,7 +39,7 @@ interface NavItemProps {
 function NavItem({ children, href }: NavItemProps) {
   return (
     <li>
-      <Typography
+      <Typography placeholder={undefined}
         as="a"
         href={href || "#"}
         target={href ? "_blank" : "_self"}
@@ -70,13 +70,13 @@ export function Navbar() {
   return (
     <div className="px-10 sticky top-4 z-50">
       <div className="mx-auto container">
-        <MTNavbar
+        <MTNavbar placeholder={undefined}
           blurred
           color="white"
           className="z-50 mt-6 relative border-0 pr-3 py-3 pl-6"
         >
           <div className="flex items-center justify-between">
-            <Typography color="blue-gray" className="text-lg font-bold">
+            <Typography placeholder={undefined} color="blue-gray" className="text-lg font-bold">
               Material Tailwind
             </Typography>
             <ul className="ml-10 hidden items-center gap-8 lg:flex">
@@ -88,15 +88,15 @@ export function Navbar() {
               ))}
             </ul>
             <div className="hidden items-center gap-4 lg:flex">
-              <Button variant="text">Log in</Button>
+              <Button placeholder={undefined} variant="text">Log in</Button>
               <a
                 href="https://www.material-tailwind.com/blocks"
                 target="_blank"
               >
-                <Button color="gray">Blocks</Button>
+                <Button placeholder={undefined} color="gray">Blocks</Button>
               </a>
             </div>
-            <IconButton
+            <IconButton placeholder={undefined}
               variant="text"
               color="gray"
               onClick={handleOpen}
@@ -120,12 +120,12 @@ export function Navbar() {
                 ))}
               </ul>
               <div className="mt-6 mb-4 flex items-center gap-4">
-                <Button variant="text">Log in</Button>
+                <Button placeholder={undefined} variant="text">Log in</Button>
                 <a
                   href="https://www.material-tailwind.com/blocks"
                   target="_blank"
                 >
-                  <Button color="gray">blocks</Button>
+                  <Button placeholder={undefined} color="gray">blocks</Button>
                 </a>
               </div>
             </div>

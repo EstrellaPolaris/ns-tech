@@ -17,15 +17,17 @@ import {
 
 const NAV_MENU = [
   {
-    name: "Page",
+    name: "Сервисы",
     icon: RectangleStackIcon,
+    href: "",
   },
   {
-    name: "Account",
+    name: "О компании",
     icon: UserCircleIcon,
+    href: "",
   },
   {
-    name: "Docs",
+    name: "Академия",
     icon: CommandLineIcon,
     href: "https://www.material-tailwind.com/docs/react/installation",
   },
@@ -68,7 +70,7 @@ export function Navbar() {
   }, []);
 
   return (
-    <div className="px-10 sticky top-4 z-50">
+    <div className="px-10 sticky top-0 z-50">
       <div className="mx-auto container">
         <MTNavbar placeholder={undefined}
           blurred
@@ -77,7 +79,7 @@ export function Navbar() {
         >
           <div className="flex items-center justify-between">
             <Typography placeholder={undefined} color="blue-gray" className="text-lg font-bold">
-              Material Tailwind
+              NS Technologies
             </Typography>
             <ul className="ml-10 hidden items-center gap-8 lg:flex">
               {NAV_MENU.map(({ name, icon: Icon, href }) => (
@@ -88,12 +90,11 @@ export function Navbar() {
               ))}
             </ul>
             <div className="hidden items-center gap-4 lg:flex">
-              <Button placeholder={undefined} variant="text">Log in</Button>
               <a
                 href="https://www.material-tailwind.com/blocks"
                 target="_blank"
               >
-                <Button placeholder={undefined} color="gray">Blocks</Button>
+                <Button placeholder={undefined} color="gray">Связаться с нами</Button>
               </a>
             </div>
             <IconButton placeholder={undefined}
@@ -120,12 +121,12 @@ export function Navbar() {
                 ))}
               </ul>
               <div className="mt-6 mb-4 flex items-center gap-4">
-                <Button placeholder={undefined} variant="text">Log in</Button>
+                
                 <a
                   href="https://www.material-tailwind.com/blocks"
                   target="_blank"
                 >
-                  <Button placeholder={undefined} color="gray">blocks</Button>
+                  <Button placeholder={undefined} color="gray">Связаться с нами</Button>
                 </a>
               </div>
             </div>
